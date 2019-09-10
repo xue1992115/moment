@@ -17,4 +17,17 @@ console.log(moment().format('DDD'), 'DDD');
 console.log(moment().format('DDDD'), 'DDDD');
 console.log(moment().format('X'), 'X');
 console.log(moment().format('x'), 'x');
+console.log(moment().format('gggg'), 'gggg');
+console.log(moment().format('gg'), 'gg');
+console.log(moment().format('w'), 'w');
+console.log(moment().format('ww'), 'ww');
+console.log(moment().format('e'), 'e');
+console.log(moment().format('ddd'), 'ddd');
+console.log(moment().format('dddd'), 'dddd');
+console.log(moment().format('GGGG'), 'GGGG');
+console.log(moment().format('GG'), 'GG');
+console.log(moment().format('W'), 'W');
+console.log(moment().format('WW'), 'WW');
+console.log(moment().format('E'), 'E');
+console.log(moment().format('E'), 'E');
 

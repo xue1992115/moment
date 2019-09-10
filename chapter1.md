@@ -21,7 +21,7 @@ moment('2013-08-12').isValid()
 注意字符串必须是对应的。
 moment("2019-09-10", "YYYY-MM-DD");
 ```
-第二个参数可以是：
+第二个参数可以是：大小写敏感
 - YYYY：年
 - YY: 年
 - Y: 年  
@@ -54,7 +54,7 @@ console.log(moment().format('DDDD'), 'DDDD');
 console.log(moment().format('X'), 'X');
 console.log(moment().format('x'), 'x');
 
-2019 YYYY
+2019 YYYY  
 19 YY
 2019 Y
 3 Q
@@ -70,3 +70,43 @@ September MMMM
 1568118285 X
 1568118285187 x
  ```
+ 也可以是周的参数：
+ - gggg: 本地该是哪一年
+ - 99: 本地两位数年
+ - w: 本地的本周是这一年的第几周
+ - ww: 本地本周是这一年的第几周
+ - e: 本地这周的第几天
+ - ddd: 本地的本周的星期几
+ - dddd: 本地的本周的星期几，全写
+ - GGGG: IOS的年份
+ - GG: IOS的年份
+ - W: IOS的周
+ - WW: IOS的周
+ - E: IOS周的第几天
+```ruby
+console.log(moment().format('gggg'), 'gggg');
+console.log(moment().format('gg'), 'gg');
+console.log(moment().format('w'), 'w');
+console.log(moment().format('ww'), 'ww');
+console.log(moment().format('e'), 'e');
+console.log(moment().format('ddd'), 'ddd');
+console.log(moment().format('dddd'), 'dddd');
+console.log(moment().format('GGGG'), 'GGGG');
+console.log(moment().format('GG'), 'GG');
+console.log(moment().format('W'), 'W');
+console.log(moment().format('WW'), 'WW');
+console.log(moment().format('E'), 'E');
+
+2019 gggg
+19 gg
+37 w
+37 ww
+2 e
+Tue ddd
+Tuesday dddd
+2019 GGGG
+19 GG
+37 W
+37 WW
+2 E
+```
