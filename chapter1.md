@@ -215,6 +215,8 @@ moment().get('hour');
 moment().get('minute');
 moment().get('second');
 moment().get('millisecond');
+
+
 moment().set('month', 3), 'month');
 moment().set('date', 1);
 moment().set('hour', 13);
@@ -323,3 +325,36 @@ console.log(moment("2012-02", "YYYY-MM").daysInMonth(), 'daysInMonth'); //获取
 4. moment('2010-10-20').isSameOrBefore('2010-10-21');
 5. moment('2010-10-20').isSameOrAfter('2010-10-19');
 6. moment('2010-10-20').isBetween('2010-10-19', '2010-10-25'); // true
+
+### 总结
+1. format：格式化时间数据
+2. moment(string)：将字符串转换为moment对象
+3. moment(object)：将对象转换为moment对象
+4. moment.unix()：将时间戳转换为moment对象
+5. get/set:设置时间
+- moment().millisecond(): 设置毫秒
+- moment().second(): 设置秒
+- moment().minute(): 设置分钟
+- moment().hour(): 设置小时
+- moment().day(): 设置周天
+- moment().date(): 天
+- moment().weekday(): 设置周天
+- moment().isoWeekday(): 设置周天
+- moment().dayOfYear(): 设置年天
+- moment().week(): 设置周
+- moment().year(): 设置年
+6. Add： 添加年月日时分秒。。。
+7. Subtract: 减去年月日时分秒
+8. startOf: 设置到开始的时间
+9. endOf： 设置到结束的时间
+10. fromNow: 距离现在的时间
+11. Difference：两个时间节点的差值
+12. moment().valueOf(): moment的unix的值
+13. monet().daysInMonths: 该月的天数
+14. query: 查询只返回true或者false
+- isBefore
+- isSame
+- isAfter
+- isSameOrBefore
+- isSameOrAfter
+- isBetween
