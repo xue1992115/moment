@@ -1,4 +1,20 @@
 const now = moment();
 const nowAlso = new Date();
-console.log(now, 'now');
-console.log(nowAlso, 'nowAlso');
+const stringTransfer = moment('2013-08-12').isValid();
+const stringFormat = moment("2019-09-10", "YYYY-MM-DD");
+console.log(moment().format('YYYY'), 'YYYY');
+console.log(moment().format('YY'), 'YY');
+console.log(moment().format('Y'), 'Y');
+console.log(moment().format('Q'), 'Q');
+console.log(moment().format('M'), 'M');
+console.log(moment().format('MM'), 'MM');
+console.log(moment().format('MMM'), 'MMM');
+console.log(moment().format('MMMM'), 'MMMM');
+console.log(moment().format('D'), 'D');
+console.log(moment().format('DD'), 'DD');
+console.log(moment().format('Do'), 'Do');
+console.log(moment().format('DDD'), 'DDD');
+console.log(moment().format('DDDD'), 'DDDD');
+console.log(moment().format('X'), 'X');
+console.log(moment().format('x'), 'x');
+
